@@ -1,10 +1,6 @@
-import glob
-
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as pp
 
-import csv
 from datetime import datetime
 import datetime as dt
 
@@ -15,22 +11,17 @@ headers = ['FileName','Process','Workbar', 'TimeIn', 'TimeOut', 'ProcessTime', '
 step_numbers = []
 for i in range(0,25):
     step_numbers.append(i)
-
 for i in step_numbers:
     headers.append(i)
-
 
 ProdData = pd.read_csv('mycsvfile2.csv') # names = headers)
 
 ProdData.replace(' ', np.nan, inplace=True)
-
 print(ProdData['TimeOut'])
 
-
 #remove NaNs
-print('================')
-
 ProdData2 = ProdData.dropna(subset=['TimeOut'])
+print('================')
 
 def correctingDates():
     date_list = []
@@ -42,7 +33,6 @@ def correctingDates():
 
     counter = 0
     for date in datesList:
-        
         #date portion
         yyyymmdd = date[0:8]
         print(type(yyyymmdd))
@@ -58,14 +48,13 @@ def correctingDates():
         
         new_DateTime = yyyymmdd + ' ' + time_string
 
-        print(type(time_string))
-        print(time_string)
+        #print(type(time_string))
+        #print(time_string)
        
-
         date_object = datetime.strptime(yyyymmdd, '%Y%m%d').strftime('%m/%d/%Y')
         date_object2 = datetime.strptime(new_DateTime, '%Y%m%d %H:%M %p').strftime('%m/%d/%Y %H:%M')
-        print(date_object)
-        print(date_object2)
+        #print(date_object)
+        #print(date_object2)
 
         #need to get the end time as parts hit 'Station 1 Unload Shuttle'
         #find row being worked on
@@ -85,7 +74,6 @@ def correctingDates():
     ProdData['Date'] = date_list
     ProdData['DateTimeIn'] = datetime_list
     #ProdData['Time'] = time_list
-
 
     print(datesList)
 
@@ -107,8 +95,6 @@ def find_InOut():
     ProdData2['Process_Time'] = (ColTimeOut - ColTimeIn)
     ProdData2['Process_Time'] = pd.to_timedelta(ProdData2['Process_Time']).dt.total_seconds() / 3600
 
-    
-
     #ProdData2 = ProdData2.drop(ProdData2['Process Time'] > 8)
 
 #correctingDates()
@@ -117,10 +103,11 @@ find_InOut()
 #DF for plotting recipe times (either reference works - brackets or dot operator)
 
 ProdDataSelection = ProdData2[(ProdData2['Process_Time'] > 0) & (ProdData2.Process_Time < 6)]
-#DF for fault tracking
-ProdDataFaults = ProdData2[(ProdData2.Process_Time > 5)]
 
+#DF for fault tracking
+ProdDataIssues = ProdData2[(ProdData2.Process_Time > 5)]
 ProdData2 = ProdData2[(ProdData2['Process_Time'] > 0)]
+
 #[['FileName'],['Process'],['Workbar'], ['TimeIn'], ['TimeOut'],['Process_Time']]
 
 #drop bad values
@@ -129,4 +116,4 @@ ProdData2 = ProdData2[(ProdData2['Process_Time'] > 0)]
 
 ProdData2.to_csv('cleanedData.csv')
 ProdDataSelection.to_csv('cleanedData2.csv')
-ProdDataFaults.to_csv('Issues.csv')
+ProdDataIssues.to_csv('Issues.csv')

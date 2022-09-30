@@ -1,14 +1,9 @@
 import glob
-from csv import reader
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as pp
-
-import openpyxl
 
 import csv
-import sys
 
 #'FileName', removed from fields
 fields = ['FileName:', 'Process:', 'Workbar:', 'TimeIn', 'TimeOut', 'ProcessTime', 'Part Number 1:', 'Qty 1:', 'Part Number 2:', 'Qty 2:','Part Number 3:', 'Qty 3:', 'Part Number 4:', 'Qty 4:', 'Part Number 5:', 'Qty 5:', 'Steps']
@@ -18,14 +13,10 @@ headers = ['FileName','Process','Workbar', 'TimeIn', 'TimeOut', 'ProcessTime', '
 step_numbers = []
 for i in range(0,39):
     step_numbers.append(i)
-
 for i in step_numbers:
     headers.append(i)
 
-print(headers)
-
 csv_files = glob.glob("*.csv")
-print(csv_files)
 print('===========================================================')
 
 #Empty list & dictionary variable
@@ -43,16 +34,15 @@ def no_blank(fd):
     except:
         return
 
-###function to remove empty rows from Reports and merge them into a single dictionary- key items are Filenames like '20220613_124 PM'
-###steps are grouped together into a single key item 'Steps'
+#function to remove empty rows from Reports and merge them into a single dictionary- key items are Filenames like '20220613_124 PM'
+#steps are grouped together into a single key item 'Steps'
 def RemoveEmptyRows(list_of_csv):
-    
     for file in list_of_csv:
         with open(file) as file_obj:
             csv_reader = csv.reader(no_blank(file_obj))
             new_csv = []
             
-            ###this step is less than ideal... appends a list of strings to the CSV list of rows
+            #this step is less than ideal... appends a list of strings to the CSV list of rows
             for row in csv_reader:
                 new_csv.append(row)
             
@@ -74,7 +64,7 @@ def RemoveEmptyRows(list_of_csv):
                                 str(new_csv[10][0]): str(new_csv[10][1]), #qty4
                                 str(new_csv[11][0]): str(new_csv[11][1]), #PartNumber5:
                                 str(new_csv[12][0]): str(new_csv[12][1]) #qty5
-                                #'Steps': steps_list
+                                #'Steps': steps_list - now being appended after
                             }
             
             print(steps_list)
@@ -84,28 +74,22 @@ def RemoveEmptyRows(list_of_csv):
             time_out = ''
 
             for steps in steps_list:
-                
                 FileName_dict[steps[0]] = steps
-
                 if steps[1] == 'Station 7 Load Shuttle':
                     time_in = steps[2]
-                    print(time_in)
-
                 if steps[1] == 'Station 51 Unload':
                     time_out = steps[3]
-                    print(time_out)
             
             FileName_dict['TimeIn'] = time_in
             FileName_dict['TimeOut'] = time_out
 
-            print(FileName_dict)
-
             FileName = str(new_csv[2][1])
             dict_ofFileNames = {FileName:FileName_dict}
-            ZDC_Filename_List.append(dict_ofFileNames)        
-                    
-RemoveEmptyRows(csv_files)
 
+            #add to the full dictionary of FileNames
+            ZDC_Filename_List.append(dict_ofFileNames)        
+
+#place all into new CSV by iterating through dictionary of dictionaries
 def new_wb(my_list):
     with open('mycsvfile2.csv', 'w', newline = '') as f:
         w = csv.writer(f, headers)
@@ -121,5 +105,6 @@ def new_wb(my_list):
                 row[4] = values['TimeOut']
                 w.writerow(row)
 
+RemoveEmptyRows(csv_files)
 new_wb(ZDC_Filename_List)
 
