@@ -1,0 +1,187 @@
+TimeIn,Process,Process
+2022-07-22 ,EmptyLine,10
+2022-07-22 ,US26D,10
+2022-07-22 ,NickelOnly,5
+2022-07-22 ,BrightCopper,3
+2022-07-23 ,EmptyLine,8
+2022-07-23 ,US26D,6
+2022-07-23 ,BrightCopper,2
+2022-07-23 ,NickelOnly,1
+2022-07-25 ,US26D,9
+2022-07-25 ,EmptyLine,8
+2022-07-25 ,BrightCopper,5
+2022-07-25 ,NickelOnly,3
+2022-07-26 ,US26D,9
+2022-07-26 ,EmptyLine,7
+2022-07-26 ,BrightCopper,4
+2022-07-26 ,10B Copper,3
+2022-07-26 ,NickelOnly,3
+2022-07-27 ,EmptyLine,3
+2022-07-27 ,US26D,3
+2022-07-27 ,10B Copper,2
+2022-07-27 ,BrightCopper,1
+2022-07-27 ,NickelOnly,1
+2022-07-28 ,US26D,10
+2022-07-28 ,EmptyLine,7
+2022-07-28 ,BrightCopper,3
+2022-07-28 ,10B Copper,2
+2022-07-29 ,EmptyLine,6
+2022-07-29 ,US26D,6
+2022-07-29 ,BrightCopper,4
+2022-07-29 ,NickelOnly,2
+2022-08-01 ,EmptyLine,8
+2022-08-01 ,10B Copper,2
+2022-08-01 ,BrightCopper,2
+2022-08-01 ,NickelOnly,2
+2022-08-01 ,US26D,2
+2022-08-02 ,US26D,7
+2022-08-02 ,EmptyLine,6
+2022-08-02 ,NickelOnly,5
+2022-08-02 ,BrightCopper,3
+2022-08-03 ,US26D,7
+2022-08-03 ,BrightCopper,3
+2022-08-03 ,EmptyLine,2
+2022-08-03 ,NickelOnly,2
+2022-08-04 ,EmptyLine,8
+2022-08-04 ,US26D,3
+2022-08-04 ,BrightCopper,2
+2022-08-04 ,10B Copper,1
+2022-08-04 ,NickelOnly,1
+2022-08-05 ,EmptyLine,8
+2022-08-05 ,US26D,6
+2022-08-05 ,NickelOnly,5
+2022-08-05 ,BrightCopper,3
+2022-08-05 ,10B Copper,2
+2022-08-08 ,US26D,8
+2022-08-08 ,NickelOnly,3
+2022-08-08 ,10B Copper,1
+2022-08-08 ,BrightCopper,1
+2022-08-10 ,EmptyLine,1
+2022-08-10 ,US26D,1
+2022-08-11 ,EmptyLine,4
+2022-08-12 ,US26D,15
+2022-08-12 ,EmptyLine,6
+2022-08-15 ,US26D,10
+2022-08-15 ,EmptyLine,9
+2022-08-15 ,BrightCopper,5
+2022-08-15 ,NickelOnly,3
+2022-08-16 ,US26D,16
+2022-08-16 ,EmptyLine,3
+2022-08-16 ,10B Copper,2
+2022-08-16 ,BrightCopper,1
+2022-08-16 ,NickelOnly,1
+2022-08-18 ,US26D,12
+2022-08-18 ,EmptyLine,8
+2022-08-19 ,US26D,10
+2022-08-19 ,EmptyLine,6
+2022-08-19 ,BrightCopper,5
+2022-08-19 ,NickelOnly,2
+2022-08-22 ,EmptyLine,4
+2022-08-22 ,US26D,1
+2022-08-23 ,US26D,4
+2022-08-24 ,US26D,12
+2022-08-24 ,NickelOnly,5
+2022-08-24 ,BrightCopper,2
+2022-08-24 ,EmptyLine,2
+2022-08-26 ,US26D,9
+2022-08-26 ,EmptyLine,7
+2022-08-26 ,NickelOnly,1
+2022-08-29 ,US26D,4
+2022-08-29 ,NickelOnly,3
+2022-08-29 ,EmptyLine,1
+2022-08-30 ,US26D,17
+2022-08-30 ,EmptyLine,7
+2022-08-30 ,NickelOnly,2
+2022-08-30 ,BrightCopper,1
+2022-08-30 ,US26DThinnerNickelCycle,1
+2022-08-31 ,US26D,13
+2022-08-31 ,EmptyLine,8
+2022-08-31 ,NickelOnly,7
+2022-08-31 ,BrightCopper,1
+2022-08-31 ,US26DThinnerNickelCycle,1
+2022-09-01 ,US26D,10
+2022-09-01 ,EmptyLine,6
+2022-09-01 ,NickelOnly,5
+2022-09-01 ,BrightCopper,2
+2022-09-01 ,10B Copper,1
+2022-09-01 ,US26DThinnerNickelCycle,1
+2022-09-02 ,US26D,13
+2022-09-02 ,EmptyLine,8
+2022-09-02 ,BrightCopper,1
+2022-09-02 ,NickelOnly,1
+2022-09-06 ,US26D,12
+2022-09-06 ,EmptyLine,7
+2022-09-07 ,US26D,10
+2022-09-07 ,EmptyLine,7
+2022-09-07 ,US26DThinnerNickelCycle,4
+2022-09-07 ,BrightCopper,2
+2022-09-07 ,10B Copper,1
+2022-09-07 ,NickelOnly,1
+2022-09-08 ,US26D,13
+2022-09-08 ,EmptyLine,7
+2022-09-09 ,US26D,15
+2022-09-09 ,EmptyLine,7
+2022-09-09 ,NickelOnly,2
+2022-09-09 ,10B Copper,1
+2022-09-12 ,EmptyLine,8
+2022-09-12 ,US26D,8
+2022-09-13 ,US26D,12
+2022-09-13 ,EmptyLine,8
+2022-09-13 ,NickelOnly,4
+2022-09-13 ,10B Copper,1
+2022-09-14 ,US26D,19
+2022-09-14 ,EmptyLine,7
+2022-09-14 ,10B Copper,1
+2022-09-14 ,BrightCopper,1
+2022-09-14 ,NickelOnly,1
+2022-09-15 ,US26D,15
+2022-09-15 ,EmptyLine,4
+2022-09-15 ,10B Copper,1
+2022-09-15 ,BrightCopper,1
+2022-09-15 ,NickelOnly,1
+2022-09-15 ,US26DThinnerNickelCycle,1
+2022-09-16 ,EmptyLine,9
+2022-09-16 ,US26D,9
+2022-09-16 ,NickelOnly,1
+2022-09-19 ,US26D,17
+2022-09-19 ,EmptyLine,7
+2022-09-19 ,BrightCopper,3
+2022-09-19 ,10B Copper,1
+2022-09-20 ,US26D,18
+2022-09-20 ,EmptyLine,8
+2022-09-20 ,10B Copper,1
+2022-09-20 ,BrightCopper,1
+2022-09-21 ,EmptyLine,9
+2022-09-21 ,BrightCopper,6
+2022-09-21 ,US26D,6
+2022-09-21 ,US26DThinnerNickelCycle,5
+2022-09-22 ,US26D,10
+2022-09-22 ,BrightCopper,7
+2022-09-22 ,EmptyLine,7
+2022-09-22 ,10B Copper,1
+2022-09-23 ,BrightCopper,7
+2022-09-23 ,EmptyLine,7
+2022-09-23 ,US26D,6
+2022-09-23 ,NickelOnly,2
+2022-09-26 ,US26D,8
+2022-09-26 ,EmptyLine,7
+2022-09-26 ,BrightCopper,6
+2022-09-26 ,10B Copper,1
+2022-09-27 ,EmptyLine,7
+2022-09-27 ,BrightCopper,4
+2022-09-27 ,US26D,4
+2022-09-28 ,US26D,14
+2022-09-28 ,EmptyLine,8
+2022-09-28 ,BrightCopper,5
+2022-09-29 ,US26D,12
+2022-09-29 ,EmptyLine,7
+2022-09-29 ,BrightCopper,2
+2022-09-29 ,10B Copper,1
+2022-09-29 ,NickelOnly,1
+2022-09-30 ,US26D,10
+2022-09-30 ,EmptyLine,8
+2022-09-30 ,BrightCopper,1
+2022-10-03 ,US26D,8
+2022-10-04 ,US26D,10
+2022-10-04 ,BrightCopper,2
+2022-10-04 ,EmptyLine,1
